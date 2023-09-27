@@ -81,12 +81,11 @@ body
 	margin-top: 50px;
 }
 
-.thumbnail
-{
+.img-thumbnail {
 	border: 0px solid #27408B;
 	padding: 15px;
-}
-
+  }
+  
 .leiamais
 {
 	font-size: 14px;
