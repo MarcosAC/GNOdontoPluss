@@ -1,0 +1,214 @@
+html, body
+{
+	height: 100%;
+}
+
+body
+{	
+	font-family: Helvetica,Arial,sans-serif;
+	overflow-x: hidden;	
+	position: relative;	
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus
+{
+    color: white;
+}
+
+.navbar-default
+{	
+	background: #27408B;
+	border: none;
+	margin-bottom: 15px;
+}
+
+.navbar-default .navbar-nav > li > a
+{
+	color: white;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .nav a:hover
+{
+	color: white;
+	background: none;
+}
+.navbar-default .navbar-nav > li > a:focus, 
+.navbar-default .navbar-nav > li > a:hover
+{
+    color: white;
+    background-color: transparent;
+}
+
+/* -- Menu Dropdown -- */
+
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:focus, 
+.navbar-default .navbar-nav > .open > a:hover
+{
+    color: white;
+    background-color: transparent;   
+}
+
+/* -- Banner-- */
+
+.carousel-inner img
+{ 	 
+   margin: auto;
+}
+
+.carousel-control.right, .carousel-control.left
+{
+    background-image: none;
+    color: #27408B;
+}
+
+.carousel-indicators li
+{
+    border-color: #27408B;
+}
+
+.carousel-indicators li.active
+{
+   background-color: #27408B;
+}
+
+/* -- Seção Tratamentos -- */
+
+#tratamentos
+{
+	margin-top: 50px;
+}
+
+.thumbnail
+{
+	border: 0px solid #27408B;
+	padding: 15px;
+}
+
+.leiamais
+{
+	font-size: 14px;
+}
+
+/* -- Efeito Slie site -- */
+
+.slideanim {visibility:hidden;}
+  ._slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+
+/* -- rodape -- */
+
+#rodape
+{	
+	position: relative;		
+	padding: 50px 0px 20px 0px;
+	background-color: #27408B;		
+}
+
+#rodape-endereco
+{
+	padding-top: 10px;
+}
+
+#forma-pagamento
+{
+	color: white;
+}
+
+ul
+{
+	list-style: none;
+	margin-bottom: 0px;
+}
+
+.item-rede-social
+{
+	float: left;	
+	padding: 5px;	
+}
+
+.item-rede-social>a
+{
+	color: #A7D4F5;
+}
+
+.item-rede-social>a:hover
+{
+	color: white;
+}
+
+#rodape-copyright
+{		
+	text-align: center;
+	margin-top: 50px;
+	color: white;		
+}
+
+#rodape-copyright>a
+{
+	color: white;
+}
+
+/* -- Botão Topo rodapé -- */
+
+.btn-topo
+{	
+	margin-left: 50%;
+	margin-right: 50%;	
+}
+
+.btn-topo>a
+{
+	color: #A7D4F5;
+}
+
+.btn-topo>a:hover
+{
+	color: white;
+}
+
+/* ========================= Tipografia ======================== */
+
+#tratamentos h3, h1
+{
+	color: #27408B;		
+}
+
+#rodape-pagamento h3
+{
+	margin-top: 0px;
+	font-size: 18px;	
+	color: white;
+}
+
+#rodape-endereco, #rodape-pagamento p
+{
+	color: white;	
+}

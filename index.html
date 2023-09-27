@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+     <!-- Style custom -->
+     <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+     <script>
+      $(window).scroll(function () {
+          $(".slideanim").each(function () {
+              var pos = $(this).offset().top;
+
+              var winTop = $(window).scrollTop();
+              if (pos < winTop + 600) {
+                  $(this).addClass("_slide");
+              }
+          });
+      });
+    </script>
+
+    <title>GN Odonto Pluss</title>
+  </head>
+  <body>
+    <header><!-- inicio Cabecalho -->
+      <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
+        <div class="container">
+          
+          <a href="index.html" class="navbar-brand">GN Odonto Pluss</a>
+
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+            <i class="fas fa-bars text-white"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="nav-principal">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="" class="nav-link active">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link active">Destaques</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link active">Especialidades</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link active">Quem Somos</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </nav>
+    </header><!--/fim Cabecalho -->
+
+    <section id="home" class="d-flex"><!--home -->
+      <div class="container align-self-center"><!--container -->
+        <div class="row"><!--row -->
+          <div class="col-md-12">
+            
+            <div id="carousel-odontopluss" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner"><!--Inner -->
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="image/img_1.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="image/img_1.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="image/img_1.jpg">
+                </div>
+
+              </div><!--/Inner -->
+
+              <!-- Controles -->
+              <a class="carousel-control-prev" href="#carousel-odontopluss" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+              </a>
+              <a class="carousel-control-next" href="#carousel-odontopluss" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+              </a>
+            </div>
+          </div>
+        </div><!--/row -->
+      </div><!--/container -->
+    </section><!--/home -->
+
+    <section id="tratamentos" class="container">
+      <h1 style="text-align:center">Tratamentos</h1>            
+      <div class="row">
+          <div class="col-sm-6 col-md-4">
+              <div class="slideanim">
+                  <img src="image/ortodontia.png" alt="..." class="img-thumbnail">
+                  <div class="caption">
+                      <h3>Ortodontia</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut sem non metus gravida pulvinar sed quis est</p>
+                      <p><a href="#" style="font-size: 14px;">Leia mais...</a></p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4">
+              <div class="slideanim">
+                  <img src="image/implante.png" alt="..." class="img-thumbnail">
+                  <div class="caption">
+                      <h3>Implantes</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut sem non metus gravida pulvinar sed quis est</p>                            
+                      <p><a href="#" style="font-size: 14px;">Leia mais...</a></p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4">
+              <div class="slideanim">
+                  <img src="image/endodontia.png" alt="..." class="img-thumbnail">
+                  <div class="Endodontia">
+                      <h3>Endodontia</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut sem non metus gravida pulvinar sed quis est</p>                            
+                      <p><a href="#" style="font-size: 14px;">Leia mais...</a></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-sm-6 col-md-4">
+              <div class="slideanim">
+                  <img src="image/periodontia.png" alt="..." class="img-thumbnail">
+                  <div class="caption">
+                      <h3>Periodontia</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut sem non metus gravida pulvinar sed quis est</p>
+                      <p><a href="#" style="font-size: 14px;">Leia mais...</a></p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4">
+              <div class="slideanim">
+                  <img src="image/restauracao.png" alt="..." class="img-thumbnail">
+                  <div class="caption">
+                      <h3>Restaurações</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut sem non metus gravida pulvinar sed quis est</p>
+                      <p><a href="#" style="font-size: 14px;">Leia mais...</a></p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4">
+              <div class="thumbnail slideanim">
+                  <img src="image/clariamento.png" alt="..." class="img-thumbnail">
+                  <div class="caption">
+                      <h3>Clariamento</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut sem non metus gravida pulvinar sed quis est</p>
+                      <p><a href="#" style="font-size: 14px;">Leia mais...</a></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <footer id="rodape">
+      <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <!-- <img src="image/img-5.jpg" class="img-responsive"> -->
+                  <div id="rodape-endereco">              
+                    <p><span class="fas fa-map-marker-alt"></span> Rua Algenor Alvin n°22 - Centro Teixeira</p>                    
+                    <p><span class="fas fa-mobile-alt"></span> (31) 9 9660 4031</p>
+                    <!-- <p><span class="glyphicon glyphicon-envelope"></span> odontomaisvicosa@gmail.com</p> -->         
+                  </div>
+                </div>
+            
+                <div id="rodape-pagamento" class="col-md-4">
+                  <h3>Formas de Pagamento:</h3>
+                  <div id=forma-pagamento>
+                    <i class="fab fa-cc-amex fa-3x" aria-hidden="true"></i>
+                    <i class="fab fa-cc-diners-club fa-3x" aria-hidden="true"></i>
+                    <i class="fab fa-cc-mastercard fa-3x" aria-hidden="true"></i>
+                    <i class="fab fa-cc-visa fa-3x" aria-hidden="true"></i>
+                    <i class="fa fa-credit-card fa-3x" aria-hidden="true"></i>
+                  </div>
+                  <p>Parcelamos em até 12x no cartão de credito e debito.</p>
+                </div>
+            
+                <div class="col-md-4">            
+                  <ul>
+                    <li class="item-rede-social"><a href="https://www.facebook.com/excellenceodontologiateixeiras/" target="_blank"><i class="fab fa-facebook fa-4x" aria-hidden="true"></i></a></li>
+                    <li class="item-rede-social"><a href=""><i class="fab fa-instagram fa-4x" aria-hidden="true"></i></a></li>              
+                    <li class="item-rede-social"><a href=""><i class="fab fa-whatsapp fa-4x" aria-hidden="true"></i></a></li>
+                    <li class="item-rede-social"><a href="#"><i class="far fa-envelope fa-4x" aria-hidden="true"></i></a></li>
+                  </ul>            
+                </div>
+              </div>
+            
+              <div class="row" id="rodape-copyright">          
+                  <a href="http://marcosaurelio.azurewebsites.net/" target="_blank">Marcos Aurelio</a> - © Todos os Direitos Reservados 2018                        
+              </div>        
+            </div>         
+      <!-- <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+            <img src="image/spotify.svg" width="142">
+          </div>
+          <div class="col-md-2">
+            <h4>company</h4>
+            <ul class="navbar-nav">
+              <li><a href="">Sobre</a></li>
+              <li><a href="">Empregos</a></li>
+              <li><a href="">Imprensa</a></li>
+              <li><a href="">Novidades</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h4>comunidades</h4>
+            <ul class="navbar-nav">
+              <li><a href="">Artistas</a></li>
+              <li><a href="">Desenvolvedores</a></li>
+              <li><a href="">Marcas</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h4>links uteis</h4>
+            <ul class="navbar-nav">
+              <li><a href="">Ajuda</a></li>
+              <li><a href="">Presentes</a></li>
+              <li><a href="">Player da web</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul>
+              <li>
+                <a href=""><img src="image/facebook.png"></a>
+              </li>
+              <li>
+                <a href=""><img src="image/twitter.png"></a>
+              </li>
+              <li>
+                <a href=""><img src="image/instagram.png"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div> -->
+    </footer>
+
+    <!-- JavaScript (Opcional) -->    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
