@@ -35,14 +35,28 @@
     ></script>
 
     <script>
-      $(window).scroll(function () {
-        $(".slideanim").each(function () {
-          var pos = $(this).offset().top;
-
-          var winTop = $(window).scrollTop();
-          if (pos < winTop + 600) {
-            $(this).addClass("_slide");
+      $(document).ready(function () {
+        $("a").on('click', function (event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 900, function () {
+                window.location.hash = hash;
+            });
           }
+        });
+
+        $(window).scroll(function () {
+          $(".slideanim").each(function () {
+            var pos = $(this).offset().top;
+          
+            var winTop = $(window).scrollTop();
+            if (pos < winTop + 600) {
+              $(this).addClass("_slide");
+            }
+          });
         });
       });
     </script>
@@ -54,7 +68,7 @@
       <!-- inicio Cabecalho -->
       <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
         <div class="container">
-          <a href="index.html" class="navbar-brand">GN Odonto Pluss</a>
+          <a href="#home" class="navbar-brand">GN Odonto Pluss</a>
 
           <button
             class="navbar-toggler"
@@ -67,16 +81,16 @@
           <div class="collapse navbar-collapse" id="nav-principal">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a href="" class="nav-link active">Home</a>
+                <a href="#home" class="nav-link active">Home</a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link active">Destaques</a>
+                <a href="#destaques" class="nav-link active">Destaques</a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link active">Especialidades</a>
+                <a href="#especialidades" class="nav-link active">Especialidades</a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link active">Quem Somos</a>
+                <a href="#quemsomos" class="nav-link active">Quem Somos</a>
               </li>
             </ul>
           </div>
@@ -143,8 +157,8 @@
     </section>
     <!--/home -->
 
-    <section id="tratamentos" class="container">
-      <h1 style="text-align: center">Tratamentos</h1>
+    <section id="especialidades" class="container">
+      <h1 style="text-align: center">Especialidades</h1>
       <div class="row">
         <div class="col-sm-6 col-md-4">
           <div class="slideanim">
@@ -234,7 +248,7 @@
       </div>
     </section>
 
-    <section id="quemsomos" class="bg-primary" style="margin-top: 2em;">
+    <section id="quemsomos" class="bg-primary slideanim" style="margin-top: 2em;">
       <div class="container">
         <div class="row justify-content-sm-center pt-3">
           <div class="col-md-9 col-xl-6 order-xl-6">
@@ -256,12 +270,8 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit porta mi, eget suscipit quam vestibulum non. 
             Maecenas in facilisis urna, et vulputate ex. Nullam imperdiet sapien et varius consequat. Proin id felis non metus sagittis rutrum et nec ante.            
           </p>
-
           </div>
-
-          
         </div>
-        
       </div>
     </section>
 
@@ -322,51 +332,6 @@
                   <a href="http://marcosaurelio.azurewebsites.net/" target="_blank">Marcos Aurelio </a> - © Todos os Direitos Reservados 2018                        
               </div>         -->
       </div>
-      <!-- <div class="container">
-        <div class="row">
-          <div class="col-md-2">
-            <img src="image/spotify.svg" width="142">
-          </div>
-          <div class="col-md-2">
-            <h4>company</h4>
-            <ul class="navbar-nav">
-              <li><a href="">Sobre</a></li>
-              <li><a href="">Empregos</a></li>
-              <li><a href="">Imprensa</a></li>
-              <li><a href="">Novidades</a></li>
-            </ul>
-          </div>
-          <div class="col-md-2">
-            <h4>comunidades</h4>
-            <ul class="navbar-nav">
-              <li><a href="">Artistas</a></li>
-              <li><a href="">Desenvolvedores</a></li>
-              <li><a href="">Marcas</a></li>
-            </ul>
-          </div>
-          <div class="col-md-2">
-            <h4>links uteis</h4>
-            <ul class="navbar-nav">
-              <li><a href="">Ajuda</a></li>
-              <li><a href="">Presentes</a></li>
-              <li><a href="">Player da web</a></li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <ul>
-              <li>
-                <a href=""><img src="image/facebook.png"></a>
-              </li>
-              <li>
-                <a href=""><img src="image/twitter.png"></a>
-              </li>
-              <li>
-                <a href=""><img src="image/instagram.png"></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div> -->
     </footer>
 
     <!-- JavaScript (Opcional) -->
@@ -380,5 +345,7 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   </body>
 </html>
